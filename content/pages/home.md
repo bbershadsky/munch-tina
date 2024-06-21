@@ -8,8 +8,9 @@ blocks:
 
       **Click on Recipes to get started**. These are being automatically
       populated from user submissions of online videos. You can run your own
-      instance of Munch by forking this Tina Repo and running the MunchETL
-      process on your own machine.
+      instance of Munch by [forking this Tina Repo
+      ](https://github.com/bbershadsky/munch-tina)and running the* MunchETL
+      process *on your own machine.
 
 
       ### How does it work?
