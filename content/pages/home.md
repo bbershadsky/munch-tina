@@ -16,7 +16,7 @@ blocks:
 
 
       Ever stumble across a great recipe video without a list of steps, or even
-      without english subtitles? Or you are being bombarded with ads from other
+      without English subtitles? Or you are being bombarded with ads from other
       recipe websites when you just want a list of steps that loads fast without
       the extra bloat?
     text2: >
