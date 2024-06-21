@@ -9,7 +9,7 @@ blocks:
       **Click on Recipes to get started**. These are being automatically
       populated from user submissions of online videos. You can run your own
       instance of Munch by forking this Tina Repo and running the MunchETL
-      process on your own machine. 
+      process on your own machine.
 
 
       ### How does it work?
@@ -19,6 +19,15 @@ blocks:
       without English subtitles? Or you are being bombarded with ads from other
       recipe websites when you just want a list of steps that loads fast without
       the extra bloat?
+
+
+      ### What does this accomplish?
+
+
+      The problem with A.I slop is quality. Sourcing quality recipes from
+      experienced and established chefs is much better than trying out the
+      latest GPT hallucination. Munch bridges the gap by scraping videos without
+      API limits to give you just the ingredients and directions you need.
     text2: >
       ## Developers
 
