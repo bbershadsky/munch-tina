@@ -2,6 +2,23 @@
 title: Munch Recipes
 blocks:
   - headline: Munch does recipes right
+    text: >
+      ## **Munch on this!**
+
+
+      **Click on Recipes to get started**. These are being automatically
+      populated from user submissions of online videos. You can run your own
+      instance of Munch by forking this Tina Repo and running the MunchETL
+      process on your own machine. 
+
+
+      ### How does it work?
+
+
+      Ever stumble across a great recipe video without a list of steps, or even
+      without english subtitles? Or you are being bombarded with ads from other
+      recipe websites when you just want a list of steps that loads fast without
+      the extra bloat?
     text2: >
       ## Developers
 
@@ -10,32 +27,20 @@ blocks:
       looking at the landing page, which pulls content from
       `content/pages/home.md`, components from components/blocks, and puts them
       all together in `pages/[filename].tsx`, all based on a config
-      `tina/config.tsx`.
-    text: >
-      ## **Editors**
+      `tina/config.tsx`.\
 
+      \
 
-      **Click this box to start editing it**. You will see the matching field
-      appear in the left sidebar for you to make changes. The edits will show in
-      this live preview. In that left panel, you can also navigate around the
-      page to change what you are editing (or just click a component here in the
-      preview, like you did before).
-
-
-      **Clicking 'Save' won't do anything in this demo** - but on your site it
-      will save the changes immediately or send an approval request to your team
-      for review.
+      You can edit the markdown files directly in the repo or using the awesome
+      Tina online editor at
+      [https://munch-tina.vercel.app/admin/](https://munch-tina.vercel.app/admin/)
     actions:
-      - label: Get Started
+      - label: Show me Recipes!
         type: button
         icon: true
         link: /posts
-      - label: Read Blog
-        type: link
-        icon: false
-        link: /posts
     image:
-      src: /uploads/unsplash-75EFpyXu3Wg.jpg
+      src: /uploads/royce-green.jpg
       alt: >-
         Photo of palm trees at sunset by Adam Birkett -
         unsplash.com/photos/75EFpyXu3Wg
@@ -73,3 +78,4 @@ blocks:
     color: primary
     _template: testimonial
 ---
+
