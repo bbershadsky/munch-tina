@@ -1,7 +1,7 @@
 ---
-title: Tina Cloud Starter
+title: Munch Recipes
 blocks:
-  - headline: Welcome to the Tina Starter
+  - headline: Munch does recipes right
     text2: >
       ## Developers
 
@@ -73,4 +73,3 @@ blocks:
     color: primary
     _template: testimonial
 ---
-

@@ -60,7 +60,7 @@ export const Footer = ({ data, icon, rawData }) => {
               className="inline-block h-10 w-auto group-hover:text-orange-500"
             />
           </Link>
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
             {data.social && data.social.facebook && (
               <a
                 className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
@@ -121,8 +121,8 @@ export const Footer = ({ data, icon, rawData }) => {
                 />
               </a>
             )}
-          </div>
-          <RawRenderer parentColor={data.color} rawData={rawData} />
+          </div> */}
+          {/* <RawRenderer parentColor={data.color} rawData={rawData} /> */}
         </div>
         <div
           className={`absolute h-1 bg-gradient-to-r from-transparent ${
