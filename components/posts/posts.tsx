@@ -3,7 +3,7 @@ import Link from "next/link";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { BsArrowRight } from "react-icons/bs";
 import { useTheme } from "../layout";
-import {format} from "date-fns";
+import { format } from "date-fns";
 import { PostsType } from "../../pages/posts";
 import Image from "next/image";
 

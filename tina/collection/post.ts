@@ -49,6 +49,25 @@ const Post: Collection = {
       name: "youtubeVideoId",
     },
     {
+      label: "Body",
+      name: "body",
+      isBody: true,
+      type: "rich-text",
+      templates: [
+        {
+          name: "Cta",
+          label: "Cta",
+          fields: [
+            {
+              name: "heading",
+              label: "Heading",
+              type: "string",
+            },
+          ],
+        },
+      ],
+    },
+    {
       type: "rich-text",
       label: "Body",
       name: "_body",

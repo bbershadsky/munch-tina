@@ -15,13 +15,18 @@ import React from "react";
 import { Container } from "../util/container";
 import { Section } from "../util/section";
 import { useTheme } from "../layout";
-import {format} from "date-fns";
+import { format } from "date-fns";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Prism } from "tinacms/dist/rich-text/prism";
 import type { TinaMarkdownContent, Components } from "tinacms/dist/rich-text";
 import { tinaField } from "tinacms/dist/react";
 import Image from "next/image";
 import { PostType } from "../../pages/posts/[...filename]";
+
+// The `props` here are based off our custom "Cta" MDX component
+const Cta = (props) => {
+  return <h2>{props.heading}</h2>;
+};
 
 const components: Components<{
   BlockQuote: {
@@ -215,6 +220,7 @@ export const Post = (props: PostType) => {
           className="prose dark:prose-dark w-full max-w-none"
         >
           <TinaMarkdown components={components} content={props._body} />
+          <TinaMarkdown components={{ Cta }} content={props.data.post.body} />
         </div>
       </Container>
     </Section>
