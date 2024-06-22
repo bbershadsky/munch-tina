@@ -2,8 +2,17 @@
 
 ### TODO
 
-Scaffold out ETL pipeline for recipes
+Scaffold out ETL pipeline from TinaETL
 Work on styling and translations
+
+### Development
+
+https://tina.io/docs/features/data-fetching/
+
+### Fooocus image generation prompt for munch
+
+- Fat happy panda eating noodles
+- MRE Manga, Adorable Kawaii, Simple Vector Art, Sticker Designs
 
 ---
 
