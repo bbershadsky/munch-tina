@@ -6,7 +6,7 @@ const Post: Collection = {
   path: "content/posts",
   format: "mdx",
   ui: {
-    router: ({ document }) => {                  
+    router: ({ document }) => {
       return `/posts/${document._sys.breadcrumbs.join("/")}`;
     },
   },
@@ -42,6 +42,11 @@ const Post: Collection = {
         dateFormat: "MMMM DD YYYY",
         timeFormat: "hh:mm A",
       },
+    },
+    {
+      type: "string",
+      label: "YouTube Video ID",
+      name: "youtubeVideoId",
     },
     {
       type: "rich-text",
