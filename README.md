@@ -5,6 +5,20 @@
 Scaffold out ETL pipeline from TinaETL
 Work on styling and translations
 
+## ETL Process
+
+```python
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+./process_all.sh <youtube_url>
+```
+
+### Prerequisites
+
+- Ollama and openhermes
+- `brew install yt-dlp`
+- `pip install --user youtube_transcript_api`
+
 ### Development
 
 https://tina.io/docs/features/data-fetching/
