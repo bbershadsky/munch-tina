@@ -21,71 +21,7 @@ pip install -r requirements.txt
 
 ### Development
 
-To embed a video in MDX using Tina, you can create a custom component for the video and then use it within your MDX files. Here's a step-by-step guide:
-
-    Create a Video Component: First, create a new component for your video embed. For example, you can create a VideoEmbed.js file:
-
-    // components/VideoEmbed.js
-    import React from 'react';
-
-    const VideoEmbed = ({ src, title }) => (
-      <div className="video-embed">
-        <iframe
-          width="560"
-          height="315"
-          src={src}
-          title={title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-    );
-
-    export default VideoEmbed;
-
-    Register the Component in Your Schema: Next, add the fields for your video component to your schema. Open your .tina/schema.ts file and add the component:
-
-    // .tina/schema.ts
-    import { defineSchema } from 'tinacms';
-
-    export default defineSchema({
-      collections: [
-        {
-          label: 'Blog Posts',
-          name: 'posts',
-          path: 'content/posts',
-          fields: [
-            {
-              type: 'rich-text',
-              label: 'Body',
-              name: 'body',
-              templates: [
-                {
-                  name: 'VideoEmbed',
-                  label: 'Video Embed',
-                  fields: [
-                    { name: 'src', label: 'Video URL', type: 'string' },
-                    { name: 'title', label: 'Video Title', type: 'string' },
-                  ],
-                },
-              ],
-              isBody: true,
-            },
-          ],
-        },
-      ],
-    });
-
-    Use the Component in Your MDX File: Now, you can use the VideoEmbed component in your MDX files:
-
-    import VideoEmbed from '../components/VideoEmbed';
-
-    # My Blog Post
-
-    Here is an embedded video:
-
-    <VideoEmbed src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Example Video" />
+After updating schema to generate typescript types `npx tinacms dev`
 
 Filter on a category
 https://tina.io/docs/graphql/queries/advanced/filter-documents/
