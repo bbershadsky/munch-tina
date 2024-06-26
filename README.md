@@ -5,6 +5,28 @@
 Scaffold out ETL pipeline from TinaETL
 Work on styling and translations
 
+#### Ideas
+
+assign a health level ranking for each food and bioavailability based on the ingredients and method of preparation
+
+sort by type of food
+
+filter out ingredients you don't like
+
+mission: solve the problem of "what are you cooking tonight?"
+
+beef tongue
+
+napa with beef tallow
+
+make european beef stew
+
+top 20 recipes
+if can't find the english translation then find a different source
+
+2x green beans
+1 part flour
+
 ## ETL Process
 
 ```python

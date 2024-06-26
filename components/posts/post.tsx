@@ -23,11 +23,6 @@ import { tinaField } from "tinacms/dist/react";
 import Image from "next/image";
 import { PostType } from "../../pages/posts/[...filename]";
 
-// The `props` here are based off our custom "Cta" MDX component
-const Cta = (props) => {
-  return <h2>{props.heading}</h2>;
-};
-
 const components: Components<{
   BlockQuote: {
     children: TinaMarkdownContent;
@@ -220,7 +215,6 @@ export const Post = (props: PostType) => {
           className="prose dark:prose-dark w-full max-w-none"
         >
           <TinaMarkdown components={components} content={props._body} />
-          <TinaMarkdown components={{ Cta }} content={props.data.post.body} />
         </div>
       </Container>
     </Section>
